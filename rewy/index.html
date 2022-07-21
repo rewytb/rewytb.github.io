@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rewy - Our creativity for your success</title>
+    <link rel="icon" type="image/x-icon" href="src/img/licon-w.png">
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="container">
+            <div class="navContainer">
+                <div id="logo-box">
+                    <a href="#" class="logo"><img src="src/img/logo.svg" alt=""></a>
+                </div>
+                <div id="menu">
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li>
+                            <a href="#bm">Bookmarks</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <header>
+        <div class="container">
+            <div class="headerContainer">
+                <div class="left">
+                    <div class="personalInfo">
+                        <h1>
+                            I'm Harun Korkmaz
+                        </h1>
+                        <p>
+                            I'm currently building websites using only HTML and CSS. I continue to improve myself in Web
+                            Development. <br><br> You can contact me via my social media addresses below.
+                        </p>
+                        <div class="socialIcons">
+                            <ul>
+                                <li>
+                                    <a href="#" class="twt">
+                                        <i class="fa-brands fa-twitter"></i>
+                                        <span class="tooltip">Soon</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://instagram.com/rewyharun"><i
+                                            class="fa-brands fa-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://www.t.me/rewyharun"><i
+                                            class="fa-brands fa-telegram"></i></a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://discord.com/users/852637529458868265"><i
+                                            class="fa-brands fa-discord"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="src/img/header.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container aboutContainer">
+            <div class="aboutTitle">
+                <h1>About Me</h1>
+                <p>
+                    You can read what I wrote in the article below and you may have learned a few things about me.
+                </p>
+            </div>
+            <div class="aboutItem">
+                <div class="left">
+                    <img src="src/img/about-me.svg" alt="">
+                </div>
+                <div class="right">
+                    <p>
+                        I was born in Istanbul in 2006 (16yo) and grew up here. I spent my primary and secondary school
+                        years
+                        at the "Türk-İsveç" school. During this time, I became interested in web design. I tried to find
+                        out by doing some research. After graduating from secondary school, I go to high school at the
+                        school <span style="cursor: pointer;"
+                            title="Amiral Vehbi Ziya Dümer Anadolu Lisesi">"AVZDAL"</span> (grade 10). I am currently
+                        improving myself.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="bm">
+        <div class="container bmContainer">
+            <div class="bmTitle">
+                <h1>Bookmarks <i class="fa-solid fa-bookmark"></i></h1>
+                <p>Some sites that helped me with my projects.</p>
+            </div>
+            <div class="bmBody">
+                <div class="bmItem">
+                    <a href="https://getwaves.io/" target="_blank"><img src="/src/img/bookmarks/getwaves.jpg"
+                            alt="Wave Generator"></a>
+                </div>
+                <div class="bmItem">
+                    <a href="https://getbootstrap.com/" target="_blank"><img src="/src/img/bookmarks/bootstrap.png"
+                            alt="Bootstrap"></a>
+                </div>
+                <div class="bmItem">
+                    <a href="https://fonts.google.com/" target="_blank"><img src="/src/img/bookmarks/googlefonts.png"
+                            alt="Google Fonts"></a>
+                </div>
+                <div class="bmItem">
+                    <a href="https://fontawesome.com/" target="_blank"><img src="/src/img/bookmarks/fontawesome.png"
+                            alt="Font Awesome"></a>
+                </div>
+                <div class="bmItem">
+                    <a href="https://www.freepik.com/" target="_blank"><img src="/src/img/bookmarks/freepik.png"
+                            alt="Frepik"> </a>
+                </div>
+                <div class="bmItem">
+                    <a href="https://www.flaticon.com/pattern" target="_blank"><img
+                            src="/src/img/bookmarks/flaticonpattern.jpg" alt="Flaticon Pattern"></a>
+                </div>
+                <div class="bmItem">
+                    <a href="https://www.photopea.com/" target="_blank"><img src="/src/img/bookmarks/photopea.png"
+                            alt="Flaticon Pattern"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container contactContainer">
+            <div class="contactTitle">
+                <h1>Get in touch!</h1>
+                <p>You can get in touch with me for any reason.</p>
+                <em>* Required</em>
+            </div>
+            <form onsubmit="sendMail(); reset(); return false;">
+                <div class="formElement">
+                    <div class="inputs">
+                        <div class="inputItem">
+                            <i class="fa-regular fa-user icon"></i>
+                            <span>Your Name <code>*</code></span>
+                            <input type="text" name="cName" id="name" required>
+                        </div>
+                        <div class="inputItem">
+                            <i class="fa-regular fa-envelope icon"></i>
+                            <span>Mail <code>*</code></span>
+                            <input type="email" name="cMail" id="mail" required>
+                        </div>
+                        <div class="inputItem">
+                            <i class="fa-solid fa-location-arrow icon"></i>
+                            <span>Subject <code>*</code></span>
+                            <input minlength="10" type="text" name="cSubject" id="subject" required>
+                        </div>
+                    </div>
+                    <div class="messages">
+                        <div class="messageItem">
+                            <span>Message <code>*</code></span>
+                            <textarea minlength="35" rows="9" name="cMessage" id="message"  rows="10"
+                                required></textarea>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="https://kit.fontawesome.com/47647802a6.js" crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script src="src/js/script.js"></script>
+
+</body>
+
+</html>
