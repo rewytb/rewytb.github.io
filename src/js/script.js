@@ -1,7 +1,7 @@
 function sendMail() {
     Email.send({
         SecureToken: "cf0fbe3f-878c-4b90-829d-33d08020eb35",
-        To: 'widdedcmp@gmail.com',
+        To: 'info@widded.com',
         From: "harunrewy@gmail.com",
         Subject: document.getElementById("subject").value,
         Body: `
